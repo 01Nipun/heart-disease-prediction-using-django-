@@ -1,0 +1,62 @@
+{% load static %} <!-- Load static files -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no" />
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+<title>Disease Predictor</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Include custom CSS file -->
+
+</head>
+<style>
+.ok{
+	color: green;
+	font-size: 40px;
+	margin-bottom: 40px;
+	height: 100%;
+	width : 100%;
+	z-index: 99;
+}
+.container{
+	background-color: aquamarine;
+	height : 100%;
+	width: 100%;
+	
+}
+.card-body{
+	width: 100%;
+	height: 100%;
+	background-color: aquamarine;
+
+}
+
+#main{
+	width: 100%;
+	height: 100%;
+	background-color: aquamarine;
+}
+</style>
+
+<body>
+	<div id="main">
+<br></br>
+<div class="container">
+	<div class="card-body">
+	<h5 class="card-title text-muted text-uppercase text-center">
+		<strong class="ok"> HEART DISEASES PREDICTION </strong><br> 
+	</h5>
+	<a href="{% url 'heart' %}" class="btn btn-block btn-danger text-uppercase">CLICK HERE TO KNOW HEART HEALTH STATUS</a> <!-- Link to the 'heart' view -->
+	</div>
+	<img src="https://media.istockphoto.com/id/1128931450/photo/heart-attack-concept.jpg?s=1024x1024&w=is&k=20&c=T4V7z13uHDY5NpzVgFs_y4b5304gGvt6KYcCuc3Cujs=" alt="">
+</div>
+</section>
+	</div>
+</body>
+
+</html>
